@@ -37,7 +37,11 @@
 
   &.space-intro {
     position: relative;
-    min-height: 50vh;
+    min-height: 75vh;
+
+    @media screen and (max-height: 800px) {
+      min-height: 500px;
+    }
 
     #particles-wrapper {
       position: absolute;
@@ -48,6 +52,7 @@
 
   .logo {
     margin: 0 auto;
+    max-width: 80vw;
   }
 }
 

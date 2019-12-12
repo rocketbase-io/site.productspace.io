@@ -2,6 +2,12 @@
   position: relative;
   font-weight: 900;
   font-size: 40px;
+
+
+  @media screen and (max-width: 800px) {
+    font-size: 35px;
+  }
+
 }
 .ml4 .letters {
   position: absolute;
