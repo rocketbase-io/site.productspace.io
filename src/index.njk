@@ -1,0 +1,103 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: home
+  order: 0
+  title: Home
+
+date: Last Modified
+tags:
+  - footer
+
+title: productspace.io
+description: "Visuelles Arbeiten mit Ihren Produkten. Erstellen Sie z.B. Suchprofile und Pinwände aus Ihrem Sortiment für Kampangienplanungen, Teambesprechen oder ähnlihchem."
+---
+
+<section class="hero space-intro space-background-image is-fullheight">
+  <div id="particles-wrapper"></div>
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-vcentered has-text-centered">
+        <div class="column is-hidden-mobile"></div>
+        <div class="column">
+          <img src="/img/brand-white.svg" alt="productspace" class="logo">
+          <h1 class="ml4">
+            <span class="letters letters-1">visualisiert</span>
+            <span class="letters letters-2">optimiert</span>
+            <span class="letters letters-3">analysiert</span>
+          </h1>
+
+        </div>
+        <div class="column is-hidden-mobile"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-hidden-mobile is-3"></div>
+      <div class="column">
+        <h3>Mehr erfahren</h3>
+        <h2 class="title">Kontaktieren Sie uns gerne!</h2>
+        <div class="title-divider"></div>
+      </div>
+      <div class="column is-hidden-mobile is-3"></div>
+    </div>
+
+    <div class="columns">
+      <div class="column is-hidden-mobile is-3"></div>
+      <div class="column">
+        <form name="contact" method="POST" action="/form-submit" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact"/>
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" name="name" required placeholder="Ihr Name">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input" type="email" name="email" required placeholder="Ihre Email-Adresse">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Ihr Anliegen..." name="message" required></textarea>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox" name="pleaseContact" required> Ich wünsche per Email kontaktiert zu werden.
+              </label>
+            </div>
+          </div>
+
+          <div class="field is-grouped">
+            <div class="control">
+              <button type="submit" class="button is-link">Senden</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="column is-hidden-mobile is-3"></div>
+    </div>
+  </div>
+</section>
+
+
+{% set js %}
+  {% include "js/anime.min.js" %}
+  {% include "js/particles.min.js" %}
+  {% include "js/custom-index.js" %}
+{% endset %}
+
+<script>{{ js | jsmin | safe }}</script>

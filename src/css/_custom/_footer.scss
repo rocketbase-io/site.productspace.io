@@ -1,0 +1,47 @@
+footer.footer {
+  padding: 5rem 1.5rem;
+  background: $blue-grey;
+
+  a {
+    color: $white;
+
+    &:hover {
+      color: $smoke-white;
+      border-bottom: 2px solid $white;
+    }
+
+    &.is-active {
+      color: $primary;
+      border-bottom: 2px solid $primary;
+    }
+  }
+
+  .moto {
+    color: $smoke-white;
+  }
+
+  ul.display-inline {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin-right: 1em;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .footer-nav-link {
+    &.active {
+      text-decoration: underline;
+    }
+  }
+
+  h2 {
+    color: $ultra-light-grey;
+    font-weight: 600;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+  }
+}

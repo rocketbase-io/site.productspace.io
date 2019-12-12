@@ -1,0 +1,39 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: form-submit
+  order: 700
+  title: Formular abgesendet
+redirectStart: true
+eleventyExcludeFromCollections: true
+---
+
+{% include "navbar.njk" %}
+
+<div class="hero is-fullheight">
+  <div class="hero-body is-clean">
+    <div class="container has-text-centered ">
+      <figure class="image is-96x96 is-centered">
+        <img src="/img/icons/email-sent.svg" alt="email sent">
+      </figure>
+      <h2 class="title">Anfrage gesendet</h2>
+
+      <div class="columns">
+        <div class="column is-hidden-mobile is-3"></div>
+        <div class="column content">
+          <article class="message is-primary">
+            <div class="message-header">
+              <p>Vielen Dank</p>
+            </div>
+            <div class="message-body">
+              <p>Wir Bedanken uns für Ihr Interesse und melden uns umgehend bei Ihnen.</p>
+              <p>Freundliche Grüße,<br>Team rocketbase.io</p>
+            </div>
+          </article>
+          <p>Sie werden gleich auf die Startseite zurück geleitet...</p>
+        </div>
+        <div class="column is-hidden-mobile is-3"></div>
+      </div>
+    </div>
+  </div>
+</div>

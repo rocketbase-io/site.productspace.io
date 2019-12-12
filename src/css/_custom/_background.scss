@@ -1,0 +1,12 @@
+.space-background-image {
+  @media all and (max-width: 920px) {
+    background-image: url("../img/background/space-920.jpg");
+  }
+  @media all and (min-width: 921px) {
+    background-image: url("../img/background/space-1920.jpg");
+  }
+  @media all and (min-width: 1921px) {
+    background-image: url("../img/background/space.jpg");
+  }
+  background-size: cover;
+}

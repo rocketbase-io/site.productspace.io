@@ -1,0 +1,33 @@
+{
+  "name": "static.orderbucket.io",
+  "version": "1.0.0",
+  "description": "Static generator for product productspace",
+  "scripts": {
+    "build": "npx eleventy",
+    "watch": "npx eleventy --watch",
+    "serve": "npx eleventy --serve",
+    "debug": "DEBUG=* npx eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rocketbase-io/static.productspace.io.git"
+  },
+  "author": {
+    "name": "Marten Prieß",
+    "email": "marten@rocketbase.io",
+    "url": "https://www.rocketbase.io"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0",
+    "@11ty/eleventy-navigation": "^0.1.1",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
+    "bulma": "^0.8.0",
+    "eleventy-plugin-sass": "^1.0.0",
+    "html-minifier": "^4.0.0",
+    "luxon": "^1.12.0",
+    "markdown-it": "^8.4.2",
+    "markdown-it-anchor": "^5.0.2",
+    "uglify-js": "^3.7.2"
+  }
+}
