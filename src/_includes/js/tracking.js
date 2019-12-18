@@ -16,7 +16,7 @@ window.cookieconsent.initialise({
     "message": "Wir verwenden Cookies, um Ihnen ein besseres Online Erlebnis anbieten zu können. Indem Sie \"OK\" anklicken ohne Ihre Cookie Einstellungen zu verändern, geben Sie uns Ihre Einwilligung Cookies zu verwenden.",
     "dismiss": "Ok",
     "link": "Mehr Infos",
-    "href": "https://www.orderbucket.io/privacy"
+    "href": "https://www.productspace.io/privacy"
   }
 });
 
