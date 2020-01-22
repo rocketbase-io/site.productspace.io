@@ -34,6 +34,7 @@
 
 .hero {
   color: $grey-white;
+  overflow: hidden;
 
   &.space-intro {
     position: relative;
@@ -47,6 +48,7 @@
       position: absolute;
       width: 100%;
       height: 100%;
+      overflow: hidden;
     }
   }
 
