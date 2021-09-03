@@ -13,6 +13,7 @@
   <meta property="og:image" content="{{ metadata.url }}/img/og-previews/{{ renderData.ogImage or ogImage or metadata.ogImage }}">
   <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
   <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+  <script defer data-domain="productspace.io" src="https://plausible.io/js/plausible.js"></script>
   {% if redirectStart %}<meta http-equiv="refresh" content="5; URL={{ metadata.url }}">{% endif %}
   {% if embed %}{{ embed | safe }}{% endif %}
 </head>
@@ -25,8 +26,6 @@
 
 
 {% set js %}
-  {% include "js/cookieconsent.js" %}
-  {% include "js/tracking.js" %}
   {% include "js/main.js" %}
 {% endset %}
 

@@ -18,16 +18,16 @@
     "url": "https://www.rocketbase.io"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.9.0",
-    "@11ty/eleventy-navigation": "^0.1.5",
-    "@11ty/eleventy-plugin-rss": "^1.0.7",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
-    "bulma": "^0.8.2",
-    "eleventy-plugin-sass": "^1.0.0",
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-navigation": "^0.3.2",
+    "@11ty/eleventy-plugin-rss": "^1.1.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.2",
+    "bulma": "^0.9.3",
+    "eleventy-plugin-sass": "^1.2.0",
     "html-minifier": "^4.0.0",
-    "luxon": "^1.24.1",
-    "markdown-it": "^8.4.2",
-    "markdown-it-anchor": "^5.3.0",
-    "uglify-js": "^3.9.4"
+    "luxon": "^2.0.2",
+    "markdown-it": "^12.2.0",
+    "markdown-it-anchor": "^8.3.0",
+    "uglify-js": "^3.14.1"
   }
 }
