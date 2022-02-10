@@ -1,5 +1,5 @@
 # productspace website
-![productspace](src/img/brand.svg)
+![productspace](src/img/productspace-logo-lined.svg)
 
 static website repository of productspace.io
 

@@ -19,16 +19,12 @@
 </head>
 <body{% if templateClass %} class="{{ templateClass }}"{% endif %}>
 
+<div class="light-one"></div>
+<div class="light-two"></div>
 
 {{ content | safe }}
 
 {% include "footer.njk" %}
 
-
-{% set js %}
-  {% include "js/main.js" %}
-{% endset %}
-
-<script>{{ js | jsmin | safe }}</script>
 </body>
 </html>

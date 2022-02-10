@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow:400,600&display=swap');
 
 $family-sans-serif: 'Barlow', sans-serif;
-$body-font-size: 1.2em !default
+$body-font-size: 1.2em !default;
 
 @import "colors";
 
@@ -12,3 +12,135 @@ $body-font-size: 1.2em !default
 @import "_custom/section";
 @import "_custom/footer";
 @import "_custom/text-animation";
+
+html {
+  background-color: #373754;
+}
+
+.light-one {
+  z-index: -100;
+  display: block;
+  position: absolute;
+  top: -50vh;
+  left: -50vw;
+  width: 100vw;
+  height: 100vh;
+  background: transparent radial-gradient(closest-side at 50% 50%, #a0d7ff 0%, #0F0F2900 100%) 0% 0% no-repeat padding-box;
+  background: transparent radial-gradient(closest-side at 50% 50%, #A0D7FF 0%, #0F0F2900 100%) 0% 0% no-repeat padding-box;
+  opacity: 0.3;
+}
+
+.light-two {
+  z-index: -100;
+  display: block;
+  position: absolute;
+  top: 40vh;
+  right: -30vw;
+  width: 60vw;
+  height: 60vh;
+  background: transparent radial-gradient(closest-side at 50% 50%, #a0d7ff 0%, #0F0F2900 100%) 0% 0% no-repeat padding-box;
+  background: transparent radial-gradient(closest-side at 50% 50%, #A0D7FF 0%, #0F0F2900 100%) 0% 0% no-repeat padding-box;
+  opacity: 0.4;
+}
+
+.up-touch {
+  @include from(1001px) {
+    display: none;
+  }
+}
+
+.after-touch {
+  display: none;
+  @include from(1001px) {
+    display: block;
+  }
+}
+
+.white-wave-box {
+  background: #ffffff;
+  margin: -2px 0;
+  padding: 2px 0;
+}
+
+section {
+  background-color: inherit;
+}
+
+.bg-shape-1 {
+  background: transparent url('../img/blob-shape-1.svg') 0% 0% no-repeat padding-box;
+  background-size: cover;
+}
+
+.landing-area {
+  height: 40vw;
+  max-height: 640px;
+  @include until(1001px) {
+    height: 50vw;
+  }
+}
+
+.astronaut-illustration {
+  position: absolute;
+  left: 5vw;
+  top: 100px;
+
+  img {
+    width: 30vw;
+    max-width: 800px;
+    height: auto;
+  }
+
+  @include until(1001px) {
+    display: none;
+  }
+}
+
+.logo-illustration {
+  position: absolute;
+  left: 45vw;
+  top: 50px;
+
+  img {
+    width: 50vw;
+    max-width: 800px;
+    height: auto;
+  }
+  @include until(1001px) {
+    left: 15vw;
+    top: 20px;
+    img {
+      width: 70vw;
+    }
+  }
+
+}
+
+.back-header {
+  padding: 20px 0;
+
+  img {
+    margin: 0 auto;
+    max-height: 100px;
+    width: auto;
+    @include until(700px) {
+      max-height: 70px;
+    }
+  }
+}
+
+.box-white {
+  background: #ffffff;
+  border-radius: 7px;
+  padding: 20px;
+  @include until(700px) {
+    max-height: 12px;
+  }
+}
+
+.landing-content {
+  margin: 0 auto;
+  max-width: 730px;
+  .content {
+    font-size: 1.2em;
+  }
+}
