@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Static generator for productspace",
   "scripts": {
-    "build": "npm run sass && npm run uglify && npx eleventy",
+    "build": "npm run sass && npx eleventy",
     "watch": "npm-run-all sass watch:*",
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "npm run sass -- --watch",
